@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Assignment</title>
+    <link rel="stylesheet" href="styles.css" >
+</head>
+<body>
+    <div class="main-container">
+        <!-- IMAGE CONTAINER-->
+        <div class="img-container">
+            <div class="transp-div">
+                <div class="logo-div">
+                    <img class="logo" src="odin-lined.png" />
+                </div>
+                <h1 class="logo-text">ODIN</h1>
+            </div>
+        </div>
+
+        <!-- FORM CONTAINER-->
+        <div class="form-container">
+            <div class="info-div">
+                <h3>
+                    This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.
+                </h3>
+                <h3>You know you want to.</h3>
+            </div>
+            <div class="form-div">
+                <h3>Let's do this!</h3>
+                <form class="form" action="#" method="post">
+                            <div class="form-row">
+                            <label for="fname">FIRST NAME
+                                <input type="text" id="fname" required>
+                            </label>
+                            <label for="lname">LAST NAME
+                                <input type="text" id="lname" required>
+                            </label>
+                            </div>
+                            <div class="form-row">
+                                <label for="email">EMAIL
+                                    <input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                                </label>
+                                <label for="phnumber">PHONE NUMBER
+                                    <input type="tel" id="phnumber" required>
+                                </label>
+                            </div>
+                            <div class="form-row">
+                                <label for="password">PASSWORD
+                                    <input type="password" id="password" pattern=".{8,}" required>
+                                </label>
+                                <label for="confirm">CONFIRM PASSWORD
+                                    <input type="password" id="confirm" pattern=".{8,}" required>
+                                </label>
+                            </div>
+                            
+                </form>
+            </div>
+            <div class="account-div">
+                <button class="btn" type="submit">Create Account</button>
+                <h3>Already have an account? <a href="#">Log In</a></h3>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

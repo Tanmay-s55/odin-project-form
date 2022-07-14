@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Amita&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    --primary-font: 'Raleway', sans-serif; 
+    --secondary-font: 'Amita', cursive;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.img-container{
+    width: 35%;
+    height: 100%;
+    background: url("backimg.jpg");
+    object-fit: cover;
+    padding: 7em 0;
+}
+.form-container{
+    font-family: var(--primary-font);
+    width: 65%;
+    height: 100%;
+    padding: 6em 0;
+}
+
+.transp-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3em;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+}
+
+.logo{
+    object-fit: scale-down;
+    max-width: 150px;
+    max-height: 150px;
+}
+.logo-text{
+    font-family: var(--secondary-font);
+    font-size: 3em;
+    color: white;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.form-div{
+    border-style: none;
+    margin: 2em 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 8px;
+    padding: 2em 2em;
+}
+.form-row{
+    width: 100%;
+    display: flex;
+    margin: 0.5em 0;
+}
+label{
+    display: flex;
+    flex-direction: column;
+    margin-right: 8em;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: #C74B50;
+}
+
+.btn{
+    border: none;
+    border-radius: 10px;
+    background-color: #C74B50;
+    color: white;
+    padding: 0.5em;
+    width: 12vw;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #D61C4E;
+}
+h3{
+    margin: 0.5em 0;
+}
+
+.info-div{
+    padding: 0 2em;
+
+}
+.account-div{
+    padding: 0 2em;
+}
+
+input{
+    width: 18vw;
+    height: 4vh;
+    border-radius: 10px;
+    border: 1px solid #C74B50;
+    padding: 5px;
+}
